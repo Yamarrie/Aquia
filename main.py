@@ -7,11 +7,14 @@ THIS_FOLDER = os.path.dirname(os.path.abspath(__file__))
 
 def main():
 
-    def commandprompt():
+    # Main command prompt kinda thing, I guess.
+    def commandPrompt():
         print("Command Prompt V1")
         cmd = input(": ")
-        if cmd ==
+        if cmd == "-t":
+            print(THIS_FOLDER)
 
+        main()
 
     # Notepad but with more options dickwad
     def improvedNotepad():
@@ -111,6 +114,8 @@ def main():
         print("1. Calculator")
         print("2. Notepad")
         print("3. File reader")
+        print("4. Improved Notepad")
+        print("5. CMD")
 
         option1 = input(": ")
 
@@ -132,14 +137,22 @@ def main():
             fileReader()
         elif option1 == "File reader":
             fileReader()
-        if option1 == "file reader":
+        elif option1 == "file reader":
             fileReader()
-        if option1 == "listdir":
+        elif option1 == "listdir":
             files = os.listdir()
             print(files)
-        if option1 == "!4":
+        elif option1 == "!4":
             improvedNotepad()
-
+        elif option1 == "Imporved Notepad":
+            improvedNotepad()
+        elif option1 == "cmd":    
+            commandPrompt()
+        elif option1 == "CMD":
+            commandPrompt()
+        else:
+            print("Unknown command\n")    
+            mainMenu()
     mainMenu()
 
 
