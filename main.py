@@ -13,7 +13,7 @@ def main():
         cmd = input(": ")
         if cmd == "-t":
             print(THIS_FOLDER)
-        if cmd == "-ls"
+        if cmd == "-ls":
             print(finfolder)
         if cmd == "home":
             mainMenu()   
