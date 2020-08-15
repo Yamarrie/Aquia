@@ -3,7 +3,7 @@ import os
 
 # Finds out what batshit crazy folder the program is contained in
 THIS_FOLDER = os.path.dirname(os.path.abspath(__file__))
-
+finfolder = os.listdir()
 
 def main():
 
@@ -13,6 +13,8 @@ def main():
         cmd = input(": ")
         if cmd == "-t":
             print(THIS_FOLDER)
+        if cmd == "-ls"
+            print(finfolder)
 
         main()
 
