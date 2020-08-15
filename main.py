@@ -15,7 +15,8 @@ def main():
             print(THIS_FOLDER)
         if cmd == "-ls"
             print(finfolder)
-
+        if cmd == "home":
+            mainMenu()   
         main()
 
     # Notepad but with more options dickwad
